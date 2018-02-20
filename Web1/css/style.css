@@ -1,0 +1,52 @@
+@import "../../node_modules/font-awesome/css/font-awesome.min.css";
+
+/*  Especifidad:
+    a=inline(recomendable que valga 0)->estilos en linea
+    b=ids(recomendable que valga 0) 
+    c= atributos (class) 
+    d= elementos (etiquetas-->header,h1,p) 
+    
+    Specify calculator para comparar*/
+
+h1, h2{
+    color:saddlebrown;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h1.enorme{
+    font-size: 5rem;
+    /* a=0,b=0,c=1,d=1 */
+}
+    
+
+header p{
+   /*  Selector de descendientes */
+    color: palevioletred;
+    /* a=0,b=0,c=0,d=2 */
+}  
+
+#p2{ 
+    /* Identificador */
+    color: rebeccapurple;
+}
+
+.verde{
+    /* Clase */
+    color:green;
+}
+
+.grande{
+    font-size: 1.4rem;
+}
+
+.enorme{
+    font-size: 5rem;
+}
+
+p[lang=en]{
+    color: blue;
+}
+
