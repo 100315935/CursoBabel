@@ -1,5 +1,10 @@
 @import "../../node_modules/font-awesome/css/font-awesome.min.css";
 
+/* *::before, *..after,
+*before,*after{
+    box-sizing: border-box;
+} */
+
 /*  Especifidad:
     a=inline(recomendable que valga 0)->estilos en linea
     b=ids(recomendable que valga 0) 
@@ -8,8 +13,14 @@
     
     Specify calculator para comparar*/
 
+
+/*   Uso de variables */
+:root{
+    --color-principal: maroon; 
+}
+
 h1, h2{
-    color:saddlebrown;
+    color:var(--color-principal);
 }
 
 h1{
@@ -29,8 +40,17 @@ header p{
 }  
 
 #p2{ 
-    /* Identificador */
+    /* Identificador */ 
     color: rebeccapurple;
+}
+
+/* Si no queremos usar id podemos usar p:nth-child()
+En este caso p:nth-child(4) es igual a p con id=2 (Es el cuarto hijo de alguien/solo tenemos body) 
+Tambien se puede usar p:nth-child-of-type(2) (Segundo hijo de alguien de tipo parrafo) 
+Mas correcto sería body>p:nth-child-of-type(2) (Segundo hijo del body de tipo parrafo) */
+
+p:nth-child(4){
+    font-weight: bold;
 }
 
 .verde{
@@ -46,7 +66,24 @@ header p{
     font-size: 5rem;
 }
 
-p[lang=en]{
+p[lang="en"] :hover span{
     color: blue;
+    font-size: 3rem;
+}
+
+p[lang="en"]::first-letter{
+    font-weight: bold;
+    font-size: 4rem;
+    font-style: italic;
+}
+/* Ejemplo before y ::after */
+/* Content se puede usar con counter,open-quote,close-quote,etc */
+ul::before{
+    content: "Aqui empieza una lista";
+    color: plum
+}
+ul::after{
+    content: "Aqui termina una lista";
+    color: orange
 }
 
