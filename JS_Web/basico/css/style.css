@@ -1,0 +1,21 @@
+SIEMPRE PONER 
+*,
+*::before *::after
+*:before *:after {
+    box-sizing: border-box
+}
+
+
+
+div{
+    width: 60%;
+    margin: 2em auto
+}
+container {
+    width: 20%
+}
+
+footer{
+
+
+}
