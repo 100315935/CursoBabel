@@ -1,0 +1,35 @@
+Prototipo de sitio Web:
+-responsivo
+-Valide HTML5
+
+Al menos dos páginas:
+-Home
+-About
+
+Las páginas mostrarán elementos comunes:
+-Header
+-Nav
+-Footer
+-Resto del contenido: Main 
+
+Home:
+2 art con textos y elementos gráficos
+info extra tangencial al contenido 
+
+About
+-breve reseá y fotografá de autor/autores
+-formulario de contacto para enviar sugerencias:
+    nombre
+    correo
+    info de preferencias
+    una vez enviado se mostrarán los datos
+
+Las paginas home/about pueden ser distintas o templates cargados dinámicamente dentro de una página.
+Se justificará por qué se ha elegido una u otra opción
+
+
+
+
+Planificación->Diseño->Codificación->Pruebas/Despliegue->Mantenimiento
+
+Illustrator,Photoshop,Balsamiq
